@@ -3,7 +3,6 @@
 
 <head>
     <title>Minecraft</title>
-    <link rel="icon" type="image/png" href="/images/download.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body{
@@ -43,26 +42,11 @@
             opacity: 1
         }
 
-        .button1 {
-            background-color: #f4511e;
-            border: none;
-            color: white;
-            padding: 50px 200px;
-            text-align: center;
-            font-size: 40px;
-            margin: 4px 2px;
-            opacity: 0.6;
-            transition: 0.3s;
-            display: inline-block;
-            text-decoration: none;
-            cursor: pointer;
-            margin-left: 375px;
-            font-family: "Comic Sans MS", cursive, sans-serif;
-        }
-
-        .button1:hover {
-            opacity: 1
-        }
+        #button_holder{
+            position: relative;
+            width: fit-content;
+            left: 50%;
+            transform: translateX(-50%);
     </style>
 </head>
 
@@ -70,10 +54,10 @@
 
     <h2>Eaglercraft</h2>
     <h3>This took me 4 hours to make feel free to distribute, paywall added soon...</h3>
-
-    <button class="button" onclick="window.location.href='https://thegamingsqueaker.github.io/eagler';">Version 1.5.2</button>
-    <button class="button1" onclick="window.location.href='https://thegamingsqueaker.github.io/betaeagler';">Minecraft Beta</button>
-
+    <div id="button_holder">
+        <button class="button" onclick="window.location.href='https://thegamingsqueaker.github.io/eagler';">Version 1.5.2</button>
+        <button class="button" onclick="window.location.href='https://thegamingsqueaker.github.io/betaeagler';">Minecraft Beta</button>
+    </div>
 </body>
 
 </html>
